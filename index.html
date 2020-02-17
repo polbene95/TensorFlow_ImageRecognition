@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="image-setter">
+                <input type="text" placeholder="Insert image URL" id="input">
+                <div class="buttons">
+                    <button id="upload-button">Upload Image</button>
+                    <button id="reset-button">Reset Image</button>
+                    <button id="run-model-button">Run Model</button>
+                </div>
+            </div>
+            <img id="img" crossOrigin src="https://images.pexels.com/photos/605496/pexels-photo-605496.jpeg" />
+        </div>
+        <div class="results-container">
+
+            <div>
+                <h1>Click the button to Run the Model</h1>
+                <div id="loader" class="loader">
+                    <div class="lds-roller">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <ul id="result-container" class="list"></ul>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </div>
+</body></html>
+
+<!-- https://i.ibb.co/2sZN5pD/profile-picture.jpg -->
+<!-- https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.ngsversion.1546554600360.adapt.1900.1.jpg -->
+<!-- https://r.hswstatic.com/w_907/gif/now-af0c66e7-4b34-4f23-ab8d-0506e4f35c5a-1210-680.jpg -->
+<!-- https://images.pexels.com/photos/605496/pexels-photo-605496.jpeg -->
+<!--<img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>-->
